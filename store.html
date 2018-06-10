@@ -1,0 +1,129 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<header onclick="openNav()">
+STORE
+
+</header>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="store.html">Store</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="content"> 
+The store component of this website is currently underconstruction. 
+    We do apologize for the inconvenience.
+    We will continue to update the website and will have the store up soon.
+    
+    <span><i>Stay FINO</i></span>
+    
+    
+    <button class="buttonload">
+  <i class="fa fa-circle-o-notch fa-spin"></i>Loading
+</button>
+
+    </div>
+
+
+<style>
+     header:hover{
+        background-color: white;
+        color: red;
+        cursor: pointer;
+    }
+    
+    header{
+        color: red;
+        font-size: 65px;
+        text-align: center;
+        font-family: cursive;
+        background-color: black;
+    }
+    
+    .content{
+        color: red;
+        white-space: pre;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 55px;
+        font-family: fantasy;
+        
+    }
+    
+    .buttonload {
+    background-color: red; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 24px; /* Some padding */
+    font-size: 16px; /* Set a font-size */
+   
+        
+}
+
+/* Add a right margin to each icon */
+.fa {
+    margin-left: -12px;
+    margin-right: 8px;
+}
+
+    
+    
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: red;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: fantasy;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}    
+
+</style>
+
+
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>

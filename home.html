@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+<style>
+    body{
+        background-color: black;
+    }
+.textbox{
+        color: red;
+        font-family: cursive;
+        font-size: 100px;
+        position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: pre;
+        
+}
+
+button{
+   position: absolute;
+    text-align: center;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    
+    padding: 2px;
+    width: 100%;
+    font-family: fantasy;
+    font-size: 35px;
+    background-color: white;
+    
+    
+
+    }
+    button:hover{
+        color: white;
+        background-color: red;
+    }
+    
+/* The Overlay (background) */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-family: cursive;
+    
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 55px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+    }
+
+
+</style>
+
+
+<body>
+<img src="images/logo.jpg" style="width: 100%">
+   
+</body>
+<!--
+ <div class="textbox">
+Estilo 
+Más 
+<span style="text-shadow: 1px 1px white">FIŃO</span>
+    </div>
+-->
+<button onclick="openNav()">Explore</button>
+
+
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="store.html">Store</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>

@@ -1,0 +1,178 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<header onclick="openNav()">
+ABOUT
+
+</header>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="store.html">Store</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!--
+<span style="padding: 15px; font-size: 30px; cursor: pointer;color: red; white-space: pre" onclick="openNav()"> &#9776; Menu
+</span>
+-->
+
+
+<div>
+<!--<img id="back" src="images/suitduo.jpg">-->
+</div>
+<div class="textbox" >
+Estilo Mas Fino was founded in October 2016 by Christopher Cordero and Jose Nieves.
+We established Estilo Mas Fino to show our fashion style with some of our Latino background.
+Launched out of New Jersey we use social media to showcase our daily styles and wardrobe.
+
+<div class="content">
+    <img class="cordero" src="images/corderopic.png" ><div class="caption1">Christopher Paul Cordero</div>
+    <img class="jose" src="images/jose.png" > <div class="caption">Jose "GUGU" Nieves</div>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+<footer>
+
+Estilo Más Fino
+"Stay Fino"
+Copyright 2018
+
+</footer>
+
+<style>
+    
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: red;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: fantasy;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}    
+    
+
+
+    footer{
+        color: red;
+        position: fixed;
+        bottom: 0px;
+        left: 45%;
+        align-content: center;
+        text-align: center;
+        white-space: pre;
+        font-family:fantasy;
+    }
+    header:hover{
+        background-color: white;
+        color: red;
+        cursor: pointer;
+    }
+    .content{
+        column-count: 2;
+        
+    }
+    .cordero{
+        width: 55%;
+        border-radius: 35%;
+        filter: grayscale();
+        max-height: 550px;
+    }
+    .jose{
+        width: 60%;
+        border-radius: 35%;
+        filter: grayscale();
+        max-height: 600px;
+    }
+
+    body{
+        background-color: black;
+    }
+    header{
+        font-family: cursive;
+        font-size: 65px;
+        color: white;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+    .cordero:hover {
+        opacity: .3;
+    }
+    .jose:hover{
+        opacity: .3;
+    }
+
+    #back{
+        opacity: .10;
+        width: 100%;
+        height: 100%;
+    }
+    
+    img{
+        width: 100%;
+        padding: 10px;
+        
+    }
+    .textbox{
+        color: white;
+/*        column-count: 2;*/
+/*        column-width: 80%;*/
+        padding: 25px;
+        align-content: center;
+        text-align: center;
+        white-space: pre;
+        position: absolute;
+        top: 15%;
+        font-family: cursive;
+    }
+</style>
+
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
